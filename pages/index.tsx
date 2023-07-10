@@ -315,7 +315,7 @@ export default function Home() {
                 id="form"
               >
                 <h1 className="text-3xl  font-bold text-center text-white">
-                  {/* <span className="text-orange-500">(30% تخفيض)</span> */}
+                  <span className="text-orange-500">(30% تخفيض)</span>
                   <br /> أطلبي الآن واستفيدي من العرض{" "}
                 </h1>
 
