@@ -111,7 +111,7 @@ export default function Home() {
           phone: `${number}`,
           wilaya: province,
           commune: address,
-          product: `tampon-sourcils`,
+          product: `طابع الحواجب`,
           size: "",
           color: "",
           agent_id: agentId,
@@ -386,31 +386,9 @@ export default function Home() {
                           />
                         </div>
                       </div>
-                    </div>
-                    <div>
-                      <label className="label w-full text-right block mt-3">
-                        <span className="label-text  text-white">العرض</span>
-                      </label>
-                      <div className="grid grid-rows-2 gap-2 mt-2">
-                        <div
-                          onClick={() => setOffer(1)}
-                          className={`flex p-1 border-2 text-white cursor-pointer  hover:border-orange-500  text-center justify-center rounded-lg ${
-                            offer === 1 ? "border-orange-500" : "border-gray-700"
-                          }`}
-                        >
-                          1 Ensemble (5800 DA)
-                        </div>
-                        <div
-                          onClick={() => setOffer(2)}
-                          className={`flex p-1 border-2 text-white cursor-pointer  hover:border-orange-500  text-center justify-center rounded-lg ${
-                            offer === 2 ? "border-orange-500" : "border-gray-700"
-                          }`}
-                        >
-                          2 Ensembles (9800 DA)
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
+                    </div>*/}
+
+                  {/* </div>  */}
 
                   <h3 className="text-lg  text-center mt-4 text-white">
                     الرجاء إدخال معلوماتك الشخصية و سوف نتصل بك للتأكيد{" "}
@@ -484,20 +462,44 @@ export default function Home() {
                       onChange={(e) => setAddress(e.target.value)}
                     />
                   </div>
-
+                  <div>
+                    <label className="label w-full text-right block mt-3">
+                      <span className="label-text  text-white">
+                        قومي باختيار العرض المناسب
+                      </span>
+                    </label>
+                    <div className="grid grid-rows-2 gap-2 mt-2">
+                      <div
+                        onClick={() => setOffer(1)}
+                        className={`flex p-1 border-2 text-white cursor-pointer  hover:border-orange-500  text-center justify-center rounded-lg ${
+                          offer === 1 ? "border-orange-500" : "border-gray-700"
+                        }`}
+                      >
+                        1 boite (2900 DA par boite){" "}
+                      </div>
+                      <div
+                        onClick={() => setOffer(2)}
+                        className={`flex p-1 border-2 text-white cursor-pointer  hover:border-orange-500  text-center justify-center rounded-lg ${
+                          offer === 2 ? "border-orange-500" : "border-gray-700"
+                        }`}
+                      >
+                        2 boites (2450 DA par boite)
+                      </div>
+                    </div>
+                  </div>
                   <div>
                     <div>
                       <div className="">
-                        {/* <p className=" mr-3 my-6 text-lg text-center text-white">
+                        <p className=" mr-3 mt-8 text-lg text-center text-white">
                           30% تخفيض
-                        </p> */}
-                        <p className="sm:flex block text-center mt-12 justify-center">
+                        </p>
+                        <p className="sm:flex block text-center mt-4 justify-center">
                           <span className="text-5xl text-orange-500 font-bold  block sm:inline">
-                            {offer === 1 ? "2900" : "9800"} DA
+                            {offer === 1 ? "2900" : "4900"} DA
                           </span>
-                          {/* <span className=" text-white text-lg line-through block sm:inline">
-                            {offer === 1 ? } DA
-                          </span> */}
+                          <span className=" text-white text-lg line-through block sm:inline">
+                            {offer === 1 ? "4100" : "8200"} DA
+                          </span>
                         </p>
                       </div>
                     </div>
