@@ -316,7 +316,7 @@ export default function Home() {
               >
                 <h1 className="text-3xl  font-bold text-center text-white">
                   <span className="text-orange-500">(55% تخفيض)</span>
-                  <br /> أطلبي الآن واستفيدي من العرض{" "}
+                  <br /> أطلبي الآن واستفيدي من العرض مع هدية{" "}
                 </h1>
 
                 <form action="#" method="post">
