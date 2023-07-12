@@ -315,7 +315,7 @@ export default function Home() {
                 id="form"
               >
                 <h1 className="text-3xl  font-bold text-center text-white">
-                  <span className="text-orange-500">(55% تخفيض)</span>
+                  <span className="text-orange-500">(35% تخفيض)</span>
                   <br /> أطلبي الآن واستفيدي من العرض مع هدية{" "}
                 </h1>
 
@@ -462,7 +462,7 @@ export default function Home() {
                       onChange={(e) => setAddress(e.target.value)}
                     />
                   </div>
-                  {/* <div>
+                  <div>
                     <label className="label w-full text-right block mt-3">
                       <span className="label-text  text-white">
                         قومي باختيار العرض المناسب
@@ -475,7 +475,7 @@ export default function Home() {
                           offer === 1 ? "border-orange-500" : "border-gray-700"
                         }`}
                       >
-                        1 boite (2900 DA par boite){" "}
+                        1 boite (2600 DA par boite){" "}
                       </div>
                       <div
                         onClick={() => setOffer(2)}
@@ -483,19 +483,19 @@ export default function Home() {
                           offer === 2 ? "border-orange-500" : "border-gray-700"
                         }`}
                       >
-                        2 boites (2450 DA par boite)
+                        2 boites (2250 DA par boite)
                       </div>
                     </div>
-                  </div> */}
+                  </div>
                   <div>
                     <div>
                       <div className="">
                         <p className=" mr-3 mt-8 text-lg text-center text-white">
-                          55% تخفيض
+                          35% تخفيض
                         </p>
                         <p className="sm:flex block text-center mt-4 justify-center">
                           <span className="text-5xl text-orange-500 font-bold  block sm:inline">
-                            {offer === 1 ? "1900" : "4900"} DA
+                            {offer === 1 ? "2600" : "4500"} DA
                           </span>
                           <span className=" text-white text-lg line-through block sm:inline">
                             {offer === 1 ? "4100" : "8200"} DA
