@@ -315,7 +315,7 @@ export default function Home() {
                 id="form"
               >
                 <h1 className="text-3xl  font-bold text-center text-white">
-                  <span className="text-orange-500">(30% تخفيض)</span>
+                  <span className="text-orange-500">(55% تخفيض)</span>
                   <br /> أطلبي الآن واستفيدي من العرض{" "}
                 </h1>
 
@@ -462,7 +462,7 @@ export default function Home() {
                       onChange={(e) => setAddress(e.target.value)}
                     />
                   </div>
-                  <div>
+                  {/* <div>
                     <label className="label w-full text-right block mt-3">
                       <span className="label-text  text-white">
                         قومي باختيار العرض المناسب
@@ -486,16 +486,16 @@ export default function Home() {
                         2 boites (2450 DA par boite)
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div>
                     <div>
                       <div className="">
                         <p className=" mr-3 mt-8 text-lg text-center text-white">
-                          30% تخفيض
+                          55% تخفيض
                         </p>
                         <p className="sm:flex block text-center mt-4 justify-center">
                           <span className="text-5xl text-orange-500 font-bold  block sm:inline">
-                            {offer === 1 ? "2900" : "4900"} DA
+                            {offer === 1 ? "1900" : "4900"} DA
                           </span>
                           <span className=" text-white text-lg line-through block sm:inline">
                             {offer === 1 ? "4100" : "8200"} DA
