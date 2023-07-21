@@ -55,7 +55,15 @@ export default function Home() {
 
   const handleAddLead = async (e: any) => {
     e.preventDefault();
-    if (fullName !== "" && province !== "" && address !== "" && number !== "") {
+    // console.log("phone number", number);
+    // return;
+    if (
+      fullName !== "" &&
+      province !== "" &&
+      address !== "" &&
+      number !== null &&
+      number !== ""
+    ) {
       try {
         setIsLoading(true);
         let agentId;
@@ -140,7 +148,7 @@ export default function Home() {
         setNameErr(false);
       }
     } else if (field === "number") {
-      if (number === null) {
+      if (number === null || number === "") {
         setNumberErr(true);
       } else {
         setNumberErr(false);
@@ -526,6 +534,7 @@ export default function Home() {
                   <div className="w-full block md:hidden">
                     {fullName === "" ||
                     number === null ||
+                    number === "" ||
                     address === "" ||
                     province === "" ? (
                       <a
