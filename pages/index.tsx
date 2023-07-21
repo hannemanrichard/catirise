@@ -161,6 +161,7 @@ export default function Home() {
       }
     }
   };
+
   const handleUpdateModel = (newModel: number) => {
     setModel(newModel);
     console.log(newModel);
